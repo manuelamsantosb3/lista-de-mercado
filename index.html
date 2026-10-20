@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD Básico Firebase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lista de Mercado</h1>
+
+    <img src="carrinho rosa.png" alt="Carrinho de Compras Rosa" class="imagem-carrinho">
+
+    <form id="meuFormulario">
+      <input type="hidden" id="itemId" />
+
+      <label for="texto">Digite um Item:</label>
+      <input type="text" id="texto" placeholder="Digite um item..." required />
+
+      <button type="submit" id="btnSalvar">Salvar</button>
+      <button type="button" id="btnCancelar" class="hidden">Cancelar</button>
+    </form>
+
+    <hr />
+
+
+    <h2>Lista</h2>
+    <ul id="listaItens">
+      <li class="mensagem">Carregando dados...</li>
+    </ul>
+  </div>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>  
+
